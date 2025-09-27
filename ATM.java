@@ -54,20 +54,20 @@ public class ATM {
         System.out.println(" login Success....") ;
 
         for(;;) {
-        System.out.println("enter the choice : ");
-        System.out.println("1.Deposits 2.withdrawl 3.checkbalance 4.Exit ");
+        System.out.println("Enter Your choice number choice : ");
+        System.out.println("For Deposits Press 1    For withdrawl Press 2     For checkbalance Press 3    For Exit Press 4 ");
 
         switch (sc.nextInt()) {
             case 1 :
-                System.out.println("Enter the amount : ");
+                System.out.println("Enter the amount for Deposit : ");
                 a.deposit(sc.nextDouble());
-                System.out.println("Deposits success....");
+                System.out.println("Deposit success....");
                 break;
 
 
             case 2 :
 
-                System.out.println("Enter the amount : ");
+                System.out.println("Enter the amount for withdrawl : ");
                 double bal = (sc.nextDouble());
 
                 if (bal> a.getBalance())
